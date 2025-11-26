@@ -1,0 +1,15 @@
+.titulo{color: aliceblue;}
+
+.titulo-especial{color: aqua;}
+
+.pildora{font-size: 50px; 
+    text-decoration: none;
+    padding-top: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.pildora-violeta{background-color: violet;}
+
+.pildora-gris{background-color: whitesmoke;}
