@@ -1,0 +1,78 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --color-primario-700: #3d325c;
+    --color-primario-300: #aca0f2;
+    --color-primario-200: #f4f1fe;
+    --color-primario-100: #d2d0f1;
+    --fuente-principal: Pinyon bold, Sansita, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+    color: var(--color-primario-700);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--color-primario-200);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.logo-header {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+    
+
+.Header__navegador {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    
+    font-size: 16px;
+    
+}
+
+.pildora-descarga {
+    background-color: var(--color-primario-300);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    justify-content: end;
+}
+
+.btn_header {
+    background-color: var(--color-primario-700);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: end;
+}
+
+.Header__navegador:hover {
+    color: var(--color-primario-300);
+    cursor: pointer;
+}
