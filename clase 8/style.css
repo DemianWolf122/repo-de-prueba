@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
 
@@ -7,9 +8,15 @@
 :root {
     --color-primario-700: #3d325c;
     --color-primario-300: #aca0f2;
-    --color-primario-200: #f4f1fe;
-    --color-primario-100: #d2d0f1;
-    --fuente-principal: Pinyon bold, Sansita, sans-serif;
+    --color-primario-200: #e1defc;
+    --color-primario-100: #f4f1fe;
+    --color-primario-50: #fbfafc;
+    --fuente-principal: 'DM Sans', sans-serif;
+}
+
+body {
+
+    background-color: var(--color-primario-100);
 }
 
 * {
@@ -29,27 +36,38 @@ header {
     background-color: var(--color-primario-200);
 }
 
+.Header__navegador_ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.content-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 ul, ol {
     list-style: none;
 }
 
+
 .logo-header {
+    font-family: 'Pinyon Script', cursive;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 400;
+    color: var(--color-primario-700);
 }
 
-
     
 
-.Header__navegador {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
-    
-    font-size: 16px;
-    
-}
+
 
 .pildora-descarga {
     background-color: var(--color-primario-300);
@@ -57,22 +75,20 @@ ul, ol {
     border-radius: 20px;
     font-size: 14px;
     font-weight: 600;
-    color: white;
+    color:var(--color-primario-300 );
     justify-content: end;
+    ;
 }
 
-.btn_header {
-    background-color: var(--color-primario-700);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    justify-content: end;
-}
+.texto-descarga {
+    color: black;
 
 .Header__navegador:hover {
     color: var(--color-primario-300);
     cursor: pointer;
+} 
+
+.texto-li {
+    color: black;
+    padding: 20px;
 }
